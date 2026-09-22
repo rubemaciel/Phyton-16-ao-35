@@ -1,0 +1,23 @@
+Preço conforme a forma de pagamento
+
+preco = float(input("Preço: R$ "))
+print("1 - Dinheiro ou Pix (10% de desconto)")
+print("2 - Débito (5% de desconto)")
+print("3 - Crédito à vista (Sem alteração)")
+print("4 - Crédito parcelado (8% de acréscimo)")
+opcao = int(input("Opção: "))
+
+if opcao == 1:
+    valor_final = preco * 0.90
+elif opcao == 2:
+    valor_final = preco * 0.95
+elif opcao == 3:
+    valor_final = preco
+elif opcao == 4:
+    valor_final = preco * 1.08
+else:
+    print("Opção inválida!")
+    valor_final = 0
+
+if valor_final > 0:
+    print(f"Valor final: R$ {valor_final:.2f}")
