@@ -1,0 +1,14 @@
+Valor do ingresso
+
+idade = int(input("Idade: "))
+estudante = input("Estudante (SIM/NÃO): ").strip().upper()
+
+valor_base = 30.00
+
+# Se tem menos de 12, 60 ou mais, ou é estudante, paga meia
+if idade < 12 or idade >= 60 or estudante == "SIM":
+    valor_ingresso = valor_base / 2
+else:
+    valor_ingresso = valor_base
+
+print(f"Valor do ingresso: R$ {valor_ingresso:.2f}")
