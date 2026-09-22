@@ -1,0 +1,10 @@
+Categoria de votação
+
+idade = int(input("Idade: "))
+
+if idade < 16:
+    print("Categoria: NÃO PODE VOTAR")
+elif 16 <= idade <= 17 or idade >= 70:
+    print("Categoria: VOTO OPCIONAL")
+else:
+    print("Categoria: VOTO OBRIGATÓRIO")
